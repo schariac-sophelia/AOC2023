@@ -6,12 +6,9 @@ You might find my attempts insightful (hopefully), or funny, or both.
 
 If you have a concern, please don't post an issue (or you can). You can reach me out easily @ Discord (ID: sophelia). 😃
 
+## Progress Table
 | **Day No.** | Stars |
 |-------------|-------|
 | 1           | ⭐     |
 | 2           | ⭐     |
 | 3           |       |
-
-0 : There are no attempts yet
-1 ⭐ : Only part 1 is done
-2 ⭐⭐ : Both parts are done
