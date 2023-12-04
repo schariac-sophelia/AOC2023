@@ -10,5 +10,6 @@ If you have a concern, please don't post an issue (or you can). You can reach me
 | **Day No.** | Stars |
 |-------------|-------|
 | 1           | ⭐     |
-| 2           | ⭐     |
+| 2           | ⭐⭐   |
 | 3           |       |
+| 4           |       |

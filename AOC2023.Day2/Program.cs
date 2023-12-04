@@ -2,6 +2,7 @@
     if (File.Exists(args[0])) {
         CubeCollection AllCubes = new CubeCollection();
         Dictionary<int, bool> GameValidity = new();
+        List<CubeCollection> GameMinimumCubes = new();
         string[] filestream = File.ReadAllLines(args[0]);
 
         // declare how many cubes you have per color
@@ -12,6 +13,7 @@
 
         foreach (string line in filestream) {
             List<string> gameRounds = line.Split(';', ':').ToList();
+            CubeCollection minimum = new CubeCollection();
             bool isValidGame = true;
 
             // first element should always be 'Game ##', so taking advantage of that
@@ -33,32 +35,51 @@
                         switch (tokens[index + 1]) {
                             case "red":
                                 currentCount.Red = count;
+                                if (minimum.Red < count)
+                                    minimum.Red = count;
                                 break;
                             case "green":
                                 currentCount.Green = count;
+                                if (minimum.Green < count)
+                                    minimum.Green = count;
                                 break;
                             case "blue":
                                 currentCount.Blue = count;
+                                if (minimum.Blue < count)
+                                    minimum.Blue = count;
                                 break;
                         }
                     }
                 }
 
                 // Check if current round would be valid or not
-                if (currentCount.Red > AllCubes.Red || currentCount.Green > AllCubes.Green || currentCount.Blue > AllCubes.Blue)
-                    isValidGame = false;
+                if (isValidGame) {
+                    if (currentCount.Red > AllCubes.Red || currentCount.Green > AllCubes.Green || currentCount.Blue > AllCubes.Blue)
+                        isValidGame = false;
+                }
 
-                Console.WriteLine("Red: {0} || Green: {1} || Blue: {2}", currentCount.Red, currentCount.Green, currentCount.Blue);
+                Console.WriteLine("  Total: R: {0} | G: {1} | B: {2}", currentCount.Red, currentCount.Green, currentCount.Blue);
+                
             }
 
-            Console.WriteLine("Result: {0}", isValidGame? "Valid" : "Invalid");
+            Console.WriteLine("\nMinimum: R: {0} | G: {1} | B: {2}", minimum.Red, minimum.Green, minimum.Blue);
+            GameMinimumCubes.Add(minimum);
+
+            Console.WriteLine(" Result: {0}", isValidGame? "Valid" : "Invalid");
             GameValidity.Add(gameID, isValidGame);
         }
 
         // Get all game IDs that contains valid game rounds
         var validKeys = GameValidity.Where(game => game.Value == true).Select(game => game.Key).ToList();
         int sumValidKeys = 0;
+        double sumPowers = 0.0d;
 
+        // Get sum of all powers of minimum cubes per game
+        foreach (var minimumCount in GameMinimumCubes) {
+            sumPowers += (minimumCount.Red * minimumCount.Green * minimumCount.Blue);
+        }
+
+        Console.WriteLine("============================================================");
         Console.Write("Valid keys: ");
         foreach (var key in validKeys) {
             Console.Write($"{key}, ");
@@ -67,6 +88,7 @@
         Console.Write("\n");
 
         Console.WriteLine($"Sum of all valid keys: {sumValidKeys}");
+        Console.WriteLine($"Sum of all powers: {sumPowers}");
     }
 } else {
     Console.WriteLine("No input file selected.");
