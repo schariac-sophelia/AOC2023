@@ -4,12 +4,14 @@ Hello. This repository contains my attempts in solving the problems found at [Ad
 
 You might find my attempts insightful (hopefully), or funny, or both.
 
-If you have a concern, please don't post an issue (or you can). You can reach me out easily @ Discord (ID: sophelia). 😃
+If you have a concern, you can reach me out easily @ Discord (ID: sophelia). 😃
+
+Happy Holidays to you 🎅🎄🌠 and have a great day!
 
 ## Progress Table
 | **Day No.** | Stars |
 |-------------|-------|
 | 1           | ⭐     |
 | 2           | ⭐⭐   |
-| 3           |       |
+| 3           | ⭐     |
 | 4           |       |

@@ -5,12 +5,14 @@ VisualStudioVersion = 17.8.34322.80
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "AOC2023.Day1", "AOC2023.Day1\AOC2023.Day1.csproj", "{E5792587-B0F2-4696-B86A-66520B798E13}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "AOC2023.Day2", "AOC2023.Day2\AOC2023.Day2.csproj", "{0754863F-D273-44A1-B11C-6420BBD4FBD5}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "AOC2023.Day2", "AOC2023.Day2\AOC2023.Day2.csproj", "{0754863F-D273-44A1-B11C-6420BBD4FBD5}"
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution Items", "Solution Items", "{7BAD7490-3BF6-488B-8B4A-3AEAE9B9CC6C}"
 	ProjectSection(SolutionItems) = preProject
 		README.md = README.md
 	EndProjectSection
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "AOC2023.Day3", "AOC2023.Day3\AOC2023.Day3.csproj", "{8590B50E-054C-44E8-AAD5-EDC0D6239635}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -26,6 +28,10 @@ Global
 		{0754863F-D273-44A1-B11C-6420BBD4FBD5}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{0754863F-D273-44A1-B11C-6420BBD4FBD5}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{0754863F-D273-44A1-B11C-6420BBD4FBD5}.Release|Any CPU.Build.0 = Release|Any CPU
+		{8590B50E-054C-44E8-AAD5-EDC0D6239635}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{8590B50E-054C-44E8-AAD5-EDC0D6239635}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{8590B50E-054C-44E8-AAD5-EDC0D6239635}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{8590B50E-054C-44E8-AAD5-EDC0D6239635}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
