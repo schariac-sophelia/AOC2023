@@ -55,7 +55,6 @@ if (args[0] != null && File.Exists(args[0])) {
             AddCopy(index + 1, CardCollection[index].CardCopy, matches);
 
         TotalCards += CardCollection[index].CardCopy;
-        Console.WriteLine($"Card {index + 1}: {CardCollection[index].CardCopy} copy");
     }
 
     Console.WriteLine($"Total points: {TotalPoints}");
