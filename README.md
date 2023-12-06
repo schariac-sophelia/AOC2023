@@ -14,5 +14,5 @@ Happy Holidays to you 🎅🎄🌠 and have a great day!
 | 1           | ⭐     |
 | 2           | ⭐⭐   |
 | 3           | ⭐⭐   |
-| 4           | ⭐     |
+| 4           | ⭐⭐   |
 | 5           |       |
