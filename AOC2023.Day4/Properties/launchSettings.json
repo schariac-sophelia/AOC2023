@@ -1,0 +1,16 @@
+{
+  "profiles": {
+    "WSL": {
+      "commandName": "WSL2",
+      "distributionName": ""
+    },
+    "AOC2023.Day4 (Test)": {
+      "commandName": "Project",
+      "commandLineArgs": "test.txt"
+    },
+    "AOC2023.Day4 (Input)": {
+      "commandName": "Project",
+      "commandLineArgs": "input.txt"
+    }
+  }
+}
